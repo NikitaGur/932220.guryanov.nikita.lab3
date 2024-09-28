@@ -1,0 +1,77 @@
+
+    .header
+    {
+       
+        color: white;
+        background-color: green;
+        text-align: center;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+.container
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item1
+{
+    padding: 30px;
+    padding-top: 20px;
+    text-align: justify;
+
+ 
+}
+
+.item2
+{
+    background-color: red;
+    color: white;
+    text-decoration: underline;
+    max-width: 120px;
+    min-width: 120px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 0;
+    min-height: calc(100vh - 87px);
+}
+@media (max-width: 800px) and (min-width: 0){
+    .item1{
+        flex: 1;
+    }
+}
+@media (min-width: 800px){
+    div.item1{
+        max-width: min-content;
+        min-width: 540px;
+    }
+}
+   
+.footer
+{
+    font-family: Arial;
+    height: 20px;
+    text-align: center;
+    left: 0;
+    position: fixed;
+    bottom: 0; 
+    padding: 5px; 
+    background: black; 
+    color: #fff;
+    width: 100%;
+}
+
+::selection
+{
+    color: white;
+    background: green;
+}
+p:hover
+{
+    background: green;
+    color:white;
+}
